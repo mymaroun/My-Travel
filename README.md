@@ -16,4 +16,6 @@ Nous avons utilisé des animation pour le splash screen, et le mockup a été r�
 L'UML a été fait avec Visual Paradigme.
 
 
+Le diagramme UML se trouvera aussi sur le git.
+
 
