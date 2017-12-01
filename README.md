@@ -19,3 +19,4 @@ L'UML a été fait avec Visual Paradigme.
 Le diagramme UML se trouvera aussi sur le git.
 
 
+Merci d'avance, Et nous restons a votre entières disposition pour déventuelles questions.
