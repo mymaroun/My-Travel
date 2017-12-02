@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    tools:context="com.example.mmaroun.mytravel.AddActivity"
+    android:background="@drawable/vide">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button3"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/button3"
+            android:layout_toRightOf="@+id/button3"
+            android:text="Ajouter un voyage"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/toolbar2"
+            android:layout_centerHorizontal="true"
+            android:background="#999999"
+            android:id="@+id/view" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lieu_de_depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/button3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignStart="@+id/button3"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Date et lieu de départ"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editDepart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/translucide"
+                            android:hint="depart"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/input_login"
+                            android:textColorHint="@color/input_login_hint" />
+
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#80CBC4" />
+
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/button3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignStart="@+id/button3"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Date et lieu d'arrivée"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/editArrivee"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/translucide"
+                            android:hint="arrivée"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/input_login"
+                            android:textColorHint="@color/input_login_hint" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#80CBC4" />
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/button3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignStart="@+id/button3"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Nombre de places"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/translucide"
+                            android:hint="Nombre de places"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/input_login"
+                            android:textColorHint="@color/input_login_hint" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="64dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#80CBC4" />
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/button3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignStart="@+id/button3"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:text="Prix logement et transport"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/prix"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/translucide"
+                            android:hint="Prix en €"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/input_login"
+                            android:textColorHint="@color/input_login_hint" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnSearch"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/accent_color"
+                        android:text="Voir le trajet sur la map"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:onClick="map"/>
+
+                    <Button
+                        android:id="@+id/btnValidate"
+                        style="?android:textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/accent_color"
+                        android:text="Ajouter le voyage"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:onClick="val"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <include
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        />
+
+</LinearLayout>
